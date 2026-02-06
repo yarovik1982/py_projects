@@ -1,0 +1,71 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Segoe UI', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: linear-gradient(135deg, #667eea, #764ba2);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+.game {
+   background: rgba(0, 0, 0, 0.3);
+   padding: 30px;
+   border-radius: 16px;
+   width: 480px;
+   text-align: center;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.word {
+   font-size: 32px;
+   letter-spacing: 10px;
+   margin: 20px 0;
+}
+
+.keyboard {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   gap: 8px;
+   margin-top: 20px;
+}
+
+.keyboard button {
+   padding: 10px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   background: white;
+   color: #333;
+   font-weight: bold;
+   transition: 0.2s;
+}
+
+.keyboard button:disabled {
+   background: #555;
+   color: #aaa;
+}
+
+.keyboard button:hover:not(:disabled) {
+   transform: scale(1.1);
+}
+
+.attempts {
+   margin-top: 10px;
+}
+
+#restart {
+   margin-top: 20px;
+   padding: 10px 16px;
+   border: none;
+   border-radius: 10px;
+   background: #ffcc00;
+   font-weight: bold;
+   cursor: pointer;
+}
